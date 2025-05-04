@@ -21,18 +21,16 @@ An iterative algorithm to find the dominant eigenvalue/vector:
 
 ### 🧮 Deflation
 
-After computing an eigenpair \((\lambda, v)\), we modify the matrix so that:
+After computing an eigenpair (lambda, v) we modify the matrix so that:
 
 - The computed eigenpair no longer influences further iterations.
 - Subsequent runs of the power method yield the next largest eigenvalue.
-- The deflation is performed through a transformation matrix \( G \).
+- The deflation is performed through a transformation matrix.
 
 ### 🔄 Givens Rotations
 
-- Use a product of 2D Givens rotations
+- Use a product of 2D Givens rotations to zero out certain direction 
 - Each transformation rotates only two coordinates i and j
-- Only 2x2 sub-rotations are computed and applied.
-- This saves memory and computation.
 
 ## ⚙️ Implementation Constraints
 
